@@ -162,7 +162,7 @@ address {
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 header,
-footer {
+footer #contact {
   background-color: #202322;
   display: flex;
   justify-content: center;
@@ -218,32 +218,32 @@ header nav ul li {
   font-size: 1.125em;
 }
 
-footer {
+footer #contact {
   text-align: center;
   flex-direction: column;
 }
 
-footer p {
+footer #contact p {
   margin: 0;
 }
 
-footer .content-wrapper {
-  width: 50%;
+footer #contact .content-wrapper {
+  width: 55%;
   margin: 50px 0;
 }
 
-footer .contact {
-  margin-bottom: 45px;
+footer #contact .contact-infor {
+  margin-bottom: 50px;
 }
 
-footer .social-icons {
+footer #contact .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 
 }
 
-footer .social-icons p {
+footer #contact .social-icons p {
   background-color: #527158;
   border-radius: 50%;
   width: 40px;
@@ -253,18 +253,19 @@ footer .social-icons p {
   align-items: center;
 }
 
-footer .social-icons p i {
+footer #contact .social-icons p i {
   font-size: 1.3125em;
 }
 
-footer .copyright {
+footer #contact .copyright {
   margin: 20px 0;
 }
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
-
 /* Hero Area */
+
+
 
 .hero-area {
   background: url(../img/junior-uk.jpg);
@@ -282,23 +283,26 @@ footer .copyright {
 
 /* work */
 
-.work {
+#work {
   background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-.work h2 {
-  margin:60px;
+#work h2 {
+margin-bottom: 15px;
   line-height: 1;
 }
 
-.work p a {
+#work p {
+  margin-bottom:15px;
+}
+#work p a {
   text-decoration:underline;
 }
 /** bio**/
-.bio {
+#bio {
   background-color: #2a423a;
   display: flex;
   justify-content: center;
@@ -306,7 +310,7 @@ footer .copyright {
   min-height: 400px;
 }
 
-.bio p a {
+#bio p a {
     text-decoration: underline;
 }
 
@@ -433,7 +437,7 @@ footer .copyright {
   }
 
   header nav {
-    width: 35%;
+    width:35%;
   }
 
   header nav ul {
@@ -452,72 +456,62 @@ footer .copyright {
 }
 
   /* work */
-  .work article {
+  #work article {
     display: flex;
     justify-content: space-between;
   }
 
-  .work h2 {
-    width: 80%;
-  }
+  #work h2 {
+    width: 95%;
 
-  .work article figure,
-  .work article div {
-    width: 39%;
-  }
-
-  .work article div {
-      width: 42%;
-      margin-right:60px;
-      margin-top:-25px;
-    }
-  .work article figure{
-    margin-left:60px;
   }
 
 
-/** bio are**/
+  #work article figure,
+  #work article div {
+    width: 45%;
+      margin-top: 32px;
+  }
 
-.bio {
 
-}
+  #work article figure{
+   margin-right:65px;
+   margin-top:47px;
+  }
+
   /* Footer */
 
-  footer {
-    ????
-  }
-footer .content-wrapper {
+footer #contact .content-wrapper {
     width: 65%;
     margin: 100px 0;
   }
 
-footer .footer-content {
+footer #contact .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
-  footer .contact {
+  footer #contact .contact-infor {
     margin-bottom: 0;
   }
 
-  footer h4 {
+  footer #contact h4 {
     font-size: 1.5em;
     margin-bottom: 40px;
+    margin-top:40px;
   }
 
-  footer p {
+  footer #contact p {
       line-height: 1.285;
   }
 
-  footer .social-icons { not sure if need to)
-    display: flex;
-    flex-flow: row wrap;??????
+  footer #contact .social-icons {
     width: 12.5em;
     justify-content: space-around;
   }
 
-  footer .copyright {
+  footer #contact .copyright {
     width: 100%;
   }
 
@@ -549,7 +543,9 @@ footer .footer-content {
 header nav {
   width: 25%;
 }
-
+ header figure  {
+   width: 25%;
+ }
   /* Hero */
   .hero-area h1 {
     font-size: 3.5em;
@@ -558,13 +554,11 @@ header nav {
 
 
   /* Work- Reviews */
-.work article div {
-    width: 42%;
-    margin-right:65px;
+#work article div {
+    width: 45%;
+
   }
-.work article figure{
-  margin-left:70px;
-}
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
