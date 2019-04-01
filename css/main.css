@@ -240,7 +240,10 @@ footer #contact .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
 
+footer #contact .social h4 {
+  margin-top: -15px;
 }
 
 footer #contact .social-icons p {
@@ -476,7 +479,7 @@ margin-bottom: 15px;
 
   #work article figure{
    margin-right:65px;
-   margin-top:47px;
+   margin-top:60px;
   }
 
   /* Footer */
@@ -499,8 +502,7 @@ footer #contact .footer-content {
   footer #contact h4 {
     font-size: 1.5em;
     margin-bottom: 40px;
-    margin-top:40px;
-  }
+    }
 
   footer #contact p {
       line-height: 1.285;
@@ -508,7 +510,7 @@ footer #contact .footer-content {
 
   footer #contact .social-icons {
     width: 12.5em;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   footer #contact .copyright {
